@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".register.TwitterRegister">
+
+    <ImageView
+        android:id="@+id/twitterRegisterProfilePic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="@id/twitterRegister_verticalGuideline5"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline2"
+        app:layout_constraintTop_toTopOf="@id/twitterRegister_horizontalGuideline1"
+        app:layout_constraintBottom_toBottomOf="@id/twitterRegister_horizontalGuideline2"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/twitterRegister_Add_dp_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorSoothingRed"
+        android:src="@drawable/ic_tick"
+        app:layout_constraintBottom_toBottomOf="@id/twitterRegister_horizontalGuideline15"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/twitterRegister_vertical_guideline8"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_vertical_guideline9"
+        app:layout_constraintTop_toTopOf="@id/twitterRegister_horizontalGuideline15"
+        app:layout_constraintVertical_bias="0.369"/>
+    <TextView
+        android:id="@+id/twitterRegisterDisplayNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegister_horizontalGuideline3" />
+
+    <EditText
+        android:id="@+id/twitterRegisterDisplayNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:background="@drawable/textviewshape"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@id/twitterRegister_horizontalGuideline4"
+        app:layout_constraintEnd_toEndOf="@+id/twitterRegister_verticalGuideline6"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegisterDisplayNameTxt" />
+
+    <TextView
+        android:id="@+id/twitterRegisterEmailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegister_horizontalGuideline5" />
+
+    <EditText
+        android:id="@+id/twitterRegisterEmailInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:background="@drawable/textviewshape"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@id/twitterRegister_horizontalGuideline6"
+        app:layout_constraintEnd_toEndOf="@+id/twitterRegister_verticalGuideline6"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegisterEmailTxt" />
+
+    <TextView
+        android:id="@+id/twitterRegisterPswdTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toTopOf="@+id/twitterRegister_horizontalGuideline7" />
+
+    <EditText
+        android:id="@+id/twitterRegisterPswdInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:background="@drawable/textviewshape"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@id/twitterRegister_horizontalGuideline8"
+        app:layout_constraintEnd_toEndOf="@+id/twitterRegister_verticalGuideline6"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegisterPswdTxt" />
+
+    <TextView
+        android:id="@+id/twitterRegisterMobileNumberTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegister_horizontalGuideline9" />
+
+    <EditText
+        android:id="@+id/twitterRegisterMobileNumberInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:background="@drawable/textviewshape"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@id/twitterRegister_horizontalGuideline10"
+        app:layout_constraintEnd_toEndOf="@+id/twitterRegister_verticalGuideline6"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegisterMobileNumberTxt" />
+
+    <TextView
+        android:id="@+id/twitterRegisterAddressTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegister_horizontalGuideline11" />
+
+    <EditText
+        android:id="@+id/twitterRegisterAddressInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:background="@drawable/textviewshape"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@id/twitterRegister_horizontalGuideline12"
+        app:layout_constraintEnd_toEndOf="@+id/twitterRegister_verticalGuideline6"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegisterAddressTxt" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/twitterRegisterErrorMsg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableStart="@drawable/error_id_pwd"
+        android:textColor="@color/colorSoothingRed"
+        android:fontFamily="@font/roboto"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:text="Please don't leave any field empty"
+        app:layout_constraintTop_toBottomOf="@id/twitterRegisterAddressInput"
+        app:layout_constraintBottom_toTopOf="@id/twitterRegisterSubmitbtn"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintEnd_toEndOf="@id/twitterRegister_verticalGuideline7"
+        />
+    <Button
+        android:id="@+id/twitterRegisterSubmitbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/soothingred_btn_bg"
+        android:text="SUBMIT"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@id/twitterRegister_horizontalGuideline14"
+        app:layout_constraintEnd_toEndOf="@id/twitterRegister_verticalGuideline5"
+        app:layout_constraintStart_toStartOf="@id/twitterRegister_verticalGuideline1"
+        app:layout_constraintTop_toBottomOf="@+id/twitterRegister_horizontalGuideline13" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_vertical_guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_vertical_guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_verticalGuideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_verticalGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_verticalGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_verticalGuideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_verticalGuideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.416" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.516" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.532" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.632" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.648" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.748" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.764" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.864" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/twitterRegister_horizontalGuideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/past_orders_main_recycler_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/past_orders_main_recycler_constraint"
+        app:layout_constraintLeft_toLeftOf="@+id/past_orders_main_recycler_constraint"
+        app:layout_constraintLeft_toRightOf="@+id/past_orders_main_recycler_constraint"
+        app:layout_constraintTop_toTopOf="@+id/past_orders_main_recycler_constraint"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/past_orders_first_inner_recycler_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/past_orders_recycler_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/fastfoodgraphics"
+                app:layout_constraintBottom_toBottomOf="@+id/past_orders_first_inner_recycler_constraint"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="@+id/past_orders_first_inner_recycler_constraint"
+                app:layout_constraintRight_toRightOf="@id/past_orders_recycler_vertical_guideline"
+                app:layout_constraintTop_toTopOf="@+id/past_orders_first_inner_recycler_constraint" />
+
+            <TextView
+                android:id="@+id/past_orders_recycler_titletxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/past_orders_recycler_img"
+                android:text="Line 1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/past_orders_recycler_vertical_guideline"
+                app:layout_constraintRight_toRightOf="@+id/past_orders_first_inner_recycler_constraint"
+                app:layout_constraintTop_toTopOf="@+id/past_orders_first_inner_recycler_constraint" />
+
+            <TextView
+                android:id="@+id/past_orders_recycler_pricetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@id/past_orders_recycler_img"
+                android:text="₹300"
+                android:textColor="@color/tab_indicator_gray"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/past_orders_recycler_vertical_guideline"
+                app:layout_constraintRight_toRightOf="@+id/past_orders_first_inner_recycler_constraint"
+                app:layout_constraintTop_toBottomOf="@+id/past_orders_recycler_titletxt" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/past_orders_recycler_divider"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toRightOf="@+id/past_orders_recycler_vertical_guideline"
+                app:layout_constraintRight_toRightOf="@+id/past_orders_first_inner_recycler_constraint"
+                app:layout_constraintTop_toBottomOf="@+id/past_orders_recycler_pricetxt" />
+            <TextView android:id="@+id/past_orders_recycler_order_detailtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@id/past_orders_recycler_img"
+                android:text="Noddlesx1, Sandwichx2"
+                android:textColor="@color/tab_indicator_gray"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/past_orders_recycler_vertical_guideline"
+                app:layout_constraintRight_toRightOf="@+id/past_orders_first_inner_recycler_constraint"
+                app:layout_constraintTop_toBottomOf="@+id/past_orders_recycler_divider"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/past_orders_recycler_reorderbtn"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/reorder_btn"
+                android:textColor="@color/colorSoothingRed"
+                android:text="Reorder"
+                app:layout_constraintRight_toRightOf="@id/past_orders_recycler_vertical_guideline2"
+                app:layout_constraintLeft_toRightOf="@id/past_orders_recycler_vertical_guideline"
+                app:layout_constraintTop_toBottomOf="@id/past_orders_recycler_order_detailtxt"
+                app:layout_constraintBottom_toBottomOf="@id/past_orders_first_inner_recycler_constraint"/>
+
+            <Button
+                android:id="@+id/past_orders_recycler_ratefoodbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rate_order_btn"
+                android:fontFamily="@font/roboto"
+                android:text="Rate Order"
+                app:layout_constraintBottom_toBottomOf="@+id/past_orders_first_inner_recycler_constraint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/past_orders_recycler_vertical_guideline2"
+                app:layout_constraintTop_toBottomOf="@id/past_orders_recycler_order_detailtxt"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/past_orders_recycler_vertical_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35"/>
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/past_orders_recycler_vertical_guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.675" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

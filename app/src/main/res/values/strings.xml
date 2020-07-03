@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Restaurant App</string>
+
+    <string name="onboarding_slide1_subtitle">Food worth Utensil Licking</string>
+    <string name="onboarding_slide1_desc">User will be able to give you live, chat and meet
+        with people nearby.</string>
+
+
+    <string name="onboarding_slide2_subtitle">Express Delivery</string>
+    <string name="onboarding_slide2_desc">Connect helps you locate the people around you who
+        are closest from your home.</string>
+
+    <string name="onboarding_slide3_subtitle">Don\'t worry About Payments</string>
+    <string name="onboarding_slide3_desc">User will be able to give you live, chat and meet
+        with people nearby.</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get started</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="new_user">New User?</string>
+    <string name="invalid_username">Invalid username</string>
+    <string name="invalid_password">Invalid password</string>
+
+    <string name="home_screen_title">Home</string>
+    <string name="home_screen_text">Can\'t walk? then fly!</string>
+
+    <string name="tick_path">M 19.0,13.0 h -6.0 v 6.0 h -2.0 v -6.0 H 5.0 v -2.0 h 6.0 V 5.0 h 2.0 v 6.0 h 6.0 v 2.0 L 19.0,13.0 M 19.0,13.0 L 19.0,13.0 </string>
+    <string name="cross_path">M 6.4,6.4 h 0.0 v 0.0 h 0.0 v 0.0 H 6.4 v 0.0 h 0.0 V 6.4 h 0.0 v 0.0 h 0.0 v 0.0 L 17.6,17.6 M 6.4,17.6 L 17.6,6.4 </string>
+    <string name="tick">tick</string>
+    <string name="cross">cross</string>
+    <string name="groupTickCross">groupTickCross</string>
+    <integer name="duration">450</integer>
+    <string name="large_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">202619697730527</string>
+    <string name="fb_login_protocol_scheme">fb202619697730527</string>
+    <string name="twitter_consumer_key">iQQzAux5JpzQLR8rD3Zv7160x</string>
+    <string name="twitter_consumer_secret">GyWoi7rw6TL8A0IBvyDgylt7s96Iwyurg9tpqk52jKu571Hf6m</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

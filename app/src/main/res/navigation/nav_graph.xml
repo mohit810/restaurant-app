@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_menu">
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.restaurantapp.bottomnav.Cart"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.restaurantapp.bottomnav.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.restaurantapp.bottomnav.menu.Menu"
+        android:label="Menu" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.restaurantapp.bottomnav.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <activity
+        android:id="@+id/pastOrders"
+        android:name="com.example.restaurantapp.bottomnav.account.PastOrders"
+        android:label="activity_past_orders"
+        tools:layout="@layout/activity_past_orders" />
+    <activity
+        android:id="@+id/callUs"
+        android:name="com.example.restaurantapp.bottomnav.account.CallUs"
+        android:label="activity_call_us"
+        tools:layout="@layout/activity_call_us" />
+    <activity
+        android:id="@+id/FAQ"
+        android:name="com.example.restaurantapp.bottomnav.account.FAQ"
+        android:label="activity_faq"
+        tools:layout="@layout/activity_faq" />
+    <activity
+        android:id="@+id/payments"
+        android:name="com.example.restaurantapp.bottomnav.account.Payments"
+        android:label="activity_payments"
+        tools:layout="@layout/activity_payments" />
+    <activity
+        android:id="@+id/accountDisplay"
+        android:name="com.example.restaurantapp.bottomnav.account.AccountDisplay"
+        android:label="activity_account_display"
+        tools:layout="@layout/activity_account_display" />
+    <activity
+        android:id="@+id/accountEdit"
+        android:name="com.example.restaurantapp.bottomnav.account.AccountEdit"
+        android:label="activity_account_edit"
+        tools:layout="@layout/activity_account_edit" />
+</navigation>

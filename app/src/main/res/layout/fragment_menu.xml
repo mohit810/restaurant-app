@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".bottomnav.menu.Menu">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:id="@+id/expandedImage"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:background="@color/colorSoothingRed"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/collapseconstraint">
+                <ImageView
+                    android:id="@+id/restaurantmenuimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:src="@drawable/restaurant_menu"
+                    app:layout_constraintBottom_toBottomOf="@+id/collapseconstraint"
+                    app:layout_constraintStart_toStartOf="@+id/collapseconstraint"
+                    app:layout_constraintTop_toTopOf="@+id/collapseconstraint"
+                    app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/usernametxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="Our Hand Picked Menu"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/collapseconstraint"
+                    app:layout_constraintEnd_toEndOf="@+id/collapseconstraint"
+                    app:layout_constraintStart_toEndOf="@+id/restaurantmenuimg"
+                    app:layout_constraintTop_toTopOf="@+id/collapseconstraint" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/menutoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:background="@color/colorSoothingRed"
+                app:popupTheme="@style/AppTheme" >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/toolBarconstraint"
+                    android:background="@color/colorSoothingRed">
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/registerbtn"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/colorSoothingRed"
+                        android:src="@drawable/icons_login"
+                        app:layout_constraintBottom_toBottomOf="@+id/toolBarconstraint"
+                        app:layout_constraintStart_toStartOf="@+id/toolBarconstraint"
+                        app:layout_constraintTop_toTopOf="@+id/toolBarconstraint" />
+                    <TextView
+                        android:id="@+id/gpsaddresstxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorSoothingRed"
+                        android:gravity="center"
+                        android:text="Your Address"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/toolBarconstraint"
+                        app:layout_constraintEnd_toEndOf="@+id/toolBarconstraint"
+                        app:layout_constraintStart_toStartOf="@+id/toolBarconstraint"
+                        app:layout_constraintTop_toTopOf="@+id/toolBarconstraint" />
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/colorSoothingRed"
+                        android:scaleType="fitCenter"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/mobile_navigator"
+                        app:layout_constraintBottom_toBottomOf="@+id/toolBarconstraint"
+                        app:layout_constraintEnd_toEndOf="@+id/toolBarconstraint"
+                        app:layout_constraintTop_toTopOf="@+id/toolBarconstraint" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutmenu"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorSoothingRed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.086"
+            app:tabTextColor="@color/colorWhite"
+            tools:ignore="MissingConstraints"
+            android:layout_gravity="bottom"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/nest_scrollview"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTickCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_anchor="@id/nest_scrollview"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/ic_tick" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

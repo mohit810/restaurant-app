@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/onboarding_activity_horizontal_guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/home_vertical_guideline8"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline3"
+        app:layout_constraintTop_toTopOf="@+id/home_horizontal_guideline3" />
+
+    <ImageView
+        android:id="@+id/home_fresh_ingredientsimg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/farm_veg"
+        app:layout_constraintBottom_toTopOf="@+id/home_horizontal_guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/home_vertical_guideline2"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_activity_horizontal_guideline2" />
+
+    <TextView
+        android:id="@+id/home_fresh_ingredienttxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Our Ingredients are daily supplied by local Farmers"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_horizontal_guideline4"
+        app:layout_constraintEnd_toEndOf="@+id/home_vertical_guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_activity_horizontal_guideline2" />
+
+    <ImageView
+        android:id="@+id/home_freshly_made_foodimg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/freshly_made"
+        app:layout_constraintBottom_toTopOf="@+id/home_horizontal_guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/home_vertical_guideline2"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/home_horizontal_guideline4" />
+
+    <TextView
+        android:id="@+id/home_freshly_made_foodtxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="We Serve and Deliver Freshly made Delicious Food"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_horizontal_guideline5"
+        app:layout_constraintEnd_toEndOf="@+id/home_vertical_guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline2"
+        app:layout_constraintTop_toTopOf="@+id/home_horizontal_guideline4" />
+
+    <ImageView
+        android:id="@+id/home_deliveryimg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/delivery"
+        app:layout_constraintBottom_toTopOf="@+id/home_horizontal_guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/home_vertical_guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/home_horizontal_guideline5" />
+
+    <TextView
+        android:id="@+id/home_deliverytxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="We also Deliver the food home for the foodie in you "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/home_horizontal_guideline6"
+        app:layout_constraintEnd_toEndOf="@+id/home_vertical_guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline2"
+        app:layout_constraintTop_toTopOf="@+id/home_horizontal_guideline5" />
+
+    <ImageView
+        android:id="@+id/home_helpimg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/help_chat"
+        app:layout_constraintBottom_toTopOf="@+id/onboarding_activity_horizontal_guideline1"
+        app:layout_constraintEnd_toStartOf="@+id/home_vertical_guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/home_horizontal_guideline6" />
+
+    <TextView
+        android:id="@+id/home_helptxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="If you have any doubt or query you can reach us through the App"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/onboarding_activity_horizontal_guideline1"
+        app:layout_constraintEnd_toEndOf="@+id/home_vertical_guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline2"
+        app:layout_constraintTop_toTopOf="@+id/home_horizontal_guideline6" />
+
+    <Button
+        android:id="@+id/home_login_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/soothingred_btn_bg"
+        android:fontFamily="@font/roboto"
+        android:text="Login"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home_vertical_guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/home_vertical_guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_activity_horizontal_guideline1" />
+
+    <Button
+        android:id="@+id/home_Signup_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/soothingred_btn_bg"
+        android:fontFamily="@font/roboto"
+        android:text="Sign UP"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/home_vertical_guideline6"
+        app:layout_constraintStart_toEndOf="@+id/home_vertical_guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_activity_horizontal_guideline1" />
+
+    <Button
+        android:id="@+id/home_menu_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/soothingred_btn_bg"
+        android:fontFamily="@font/roboto"
+        android:text="Try US"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/home_vertical_guideline8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/home_vertical_guideline7"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_activity_horizontal_guideline1" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_vertical_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.015" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_vertical_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_vertical_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_vertical_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.318" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_vertical_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.346" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_vertical_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.625" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_vertical_guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.654" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_vertical_guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/onboarding_activity_horizontal_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/onboarding_activity_horizontal_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_horizontal_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_horizontal_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_horizontal_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_horizontal_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+</androidx.constraintlayout.widget.ConstraintLayout>

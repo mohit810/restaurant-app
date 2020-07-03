@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/not_loged_in_cardView"
+        app:cardCornerRadius="5dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+    <TextView
+        android:id="@+id/not_loged_in_addresstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Please enter your Address:-"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/not_loged_in_addressInput_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@+id/not_loged_in_addresstxt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/not_loged_in_addressInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@color/colorParis" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/not_loged_in_phonetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Please enter your Mobile No.:-"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/not_loged_in_addressInput_box" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/not_loged_in_phoneInput_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@+id/not_loged_in_phonetxt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/not_loged_in_phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:background="@color/colorParis" />
+    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/not_loged_in_ErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:drawableStart="@drawable/error_id_pwd"
+                android:textColor="@color/colorSoothingRed"
+                android:fontFamily="@font/roboto"
+                android:imeOptions="actionDone"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0"
+                android:text="Please don't leave any field empty"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/not_loged_in_phoneInput_box"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:id="@+id/not_loged_in_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@id/not_loged_in_ErrorMsg">
+
+        <Button
+            android:id="@+id/not_loged_in_loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/soothingred_btn_bg"
+            android:text="Login"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/not_loged_in_signupbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/soothingred_btn_bg"
+            android:text="Sign Up"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/not_logged_in_continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/not_logged_in_edittext"
+            android:text="Continue"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

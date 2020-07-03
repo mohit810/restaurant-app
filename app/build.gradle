@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.example.restaurantapp"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //        Adding this line to support vectors
+        vectorDrawables.useSupportLibrary = true
+
+    }
+    dataBinding {
+        enabled true
+    }
+    // Configure only for each module that uses Java 8
+    // language features (either in its source code or
+    // through dependencies).
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // For Kotlin projects
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.annotation:annotation:1.0.2'
+    //notification
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    testImplementation 'junit:junit:4.13'
+    implementation 'com.google.android.material:material:1.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.1'
+    //location
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    //firebase
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+    //play service auth
+    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+    //facebook
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    //Twitter
+    compile('com.twitter.sdk.android:twitter:3.1.1@aar') {
+        transitive = true
+    }
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.12'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    //Encryption
+    implementation 'androidx.security:security-crypto:1.0.0-alpha02'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //circle transformation
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    //cropping images
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    //facebook shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    //lottie
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'androidx.core:core:1.3.0-rc01'
+    //roomdb
+    kapt "androidx.room:room-compiler:2.2.5"
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:2.2.5"
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    //elegant button for food Quantity
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.3'
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bottomnav.account.CallUs">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_curve"
+        app:layout_constraintBottom_toBottomOf="@id/callUs_horizontalGuidelin3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/callUs_horizontalGuidelin1"
+        app:layout_constraintBottom_toBottomOf="@id/callUs_horizontalGuidelin2"
+        android:columnOrderPreserved="false"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:padding="14dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/getACall_card"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/get_a_call"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/callUs_getACall_horizontalGuideline"/>
+                <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Get A Call"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="@id/callUs_getACall_horizontalGuideline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/callUs_getACall_horizontalGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.8" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/CallUs_card"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/call_us_icon"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/callUs_callUs_horizontalGuideline"/>
+                <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Call Us"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="@id/callUs_callUs_horizontalGuideline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/callUs_callUs_horizontalGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/callUs_horizontalGuidelin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/callUs_horizontalGuidelin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/callUs_horizontalGuidelin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bottomnav.account.AccountDisplay"
+    android:background="@color/colorWhite">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_curve"
+        app:layout_constraintBottom_toBottomOf="@id/accountDisplay_horizontal_guideline17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/accountDisplayUserPic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="@id/accountDisplay_horizontal_guideline2"
+        app:layout_constraintEnd_toEndOf="@id/accountDisplay_vertical_guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/accountDisplay_vertical_guideline2"
+        app:layout_constraintTop_toTopOf="@id/accountDisplay_horizontal_guideline1"
+        app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/edit"
+        android:id="@+id/accountDisplayEditProfile"
+        app:layout_constraintTop_toTopOf="@id/accountDisplay_horizontal_guideline15"
+        app:layout_constraintBottom_toBottomOf="@id/accountDisplay_horizontal_guideline2"
+        app:layout_constraintRight_toRightOf="@id/accountDisplay_vertical_guideline4"
+        app:layout_constraintLeft_toLeftOf="@id/accountDisplay_vertical_guideline5"/>
+
+    <TextView
+        android:id="@+id/accountDisplayDisplayNameInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:text="Dfsfsdcs"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplay_horizontal_guideline4"
+        app:layout_constraintEnd_toEndOf="@+id/accountDisplay_vertical_guideline6"
+        app:layout_constraintStart_toStartOf="@id/accountDisplay_vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/accountDisplay_horizontal_guideline3" />
+    <TextView
+        android:id="@+id/accountDisplayDisplayNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorSoothingRed"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        app:layout_constraintEnd_toEndOf="@id/accountDisplayDisplayNameInput"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/accountDisplayDisplayNameInput"
+        app:layout_constraintTop_toTopOf="@+id/accountDisplayDisplayNameInput"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplayDisplayNameInput"/>
+    <TextView
+        android:id="@+id/accountDisplayemailinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:text="Dfsfsdcs"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplay_horizontal_guideline6"
+        app:layout_constraintEnd_toEndOf="@+id/accountDisplay_vertical_guideline6"
+        app:layout_constraintStart_toStartOf="@id/accountDisplay_vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/accountDisplay_horizontal_guideline5" />
+    <TextView
+        android:id="@+id/accountDisplayemailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorSoothingRed"
+        android:text="Email"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        app:layout_constraintEnd_toEndOf="@id/accountDisplayemailinput"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplayemailinput"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/accountDisplayemailinput"
+        app:layout_constraintTop_toTopOf="@+id/accountDisplayemailinput" />
+
+
+    <TextView
+        android:id="@+id/accountDisplaypswdinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:text="Dfsfsdcs"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplay_horizontal_guideline8"
+        app:layout_constraintEnd_toEndOf="@+id/accountDisplay_vertical_guideline6"
+        app:layout_constraintStart_toStartOf="@id/accountDisplay_vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/accountDisplay_horizontal_guideline7" />
+    <TextView
+        android:id="@+id/accountDisplaypswdtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Password"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@id/accountDisplaypswdinput"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/accountDisplaypswdinput"
+        app:layout_constraintTop_toTopOf="@+id/accountDisplaypswdinput"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplaypswdinput" />
+
+    <TextView
+        android:id="@+id/accountDisplaymobilenumberinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:text="Dfsfsdcs"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplay_horizontal_guideline10"
+        app:layout_constraintEnd_toEndOf="@+id/accountDisplay_vertical_guideline6"
+        app:layout_constraintStart_toStartOf="@id/accountDisplay_vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/accountDisplay_horizontal_guideline9" />
+    <TextView
+        android:id="@+id/accountDisplaymobilenumbertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Mobile Number"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@id/accountDisplaymobilenumberinput"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/accountDisplaymobilenumberinput"
+        app:layout_constraintTop_toTopOf="@+id/accountDisplaymobilenumberinput"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplaymobilenumberinput" />
+
+    <TextView
+        android:id="@+id/accountDisplayaddressinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:text="Dfsfsdcs"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplay_horizontal_guideline12"
+        app:layout_constraintEnd_toEndOf="@+id/accountDisplay_vertical_guideline6"
+        app:layout_constraintStart_toStartOf="@id/accountDisplay_vertical_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/accountDisplay_horizontal_guideline11" />
+    <TextView
+        android:id="@+id/accountDisplayaddresstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Address"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@id/accountDisplayaddressinput"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/accountDisplayaddressinput"
+        app:layout_constraintTop_toTopOf="@+id/accountDisplayaddressinput"
+        app:layout_constraintBottom_toTopOf="@id/accountDisplayaddressinput"/>
+    <Button
+        android:id="@+id/accountDisplayChangePswdbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/soothingred_btn_bg"
+        android:text="Change Password"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@id/accountDisplay_horizontal_guideline14"
+        app:layout_constraintEnd_toEndOf="@id/accountDisplay_vertical_guideline5"
+        app:layout_constraintStart_toStartOf="@id/accountDisplay_vertical_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/accountDisplay_horizontal_guideline13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.495" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_vertical_guideline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.015" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.436" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.516" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.552" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.632" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.668" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.748" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.784" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.864" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accountDisplay_horizontal_guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.275" />
+</androidx.constraintlayout.widget.ConstraintLayout>
