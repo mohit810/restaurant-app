@@ -44,8 +44,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="facebook_app_id">202619697730527</string>
     <string name="fb_login_protocol_scheme">fb202619697730527</string>
-    <string name="twitter_consumer_key">iQQzAux5JpzQLR8rD3Zv7160x</string>
-    <string name="twitter_consumer_secret">GyWoi7rw6TL8A0IBvyDgylt7s96Iwyurg9tpqk52jKu571Hf6m</string>
+    <string name="twitter_consumer_key">ur_key</string>
+    <string name="twitter_consumer_secret">ur_key</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
